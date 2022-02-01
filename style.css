@@ -1,0 +1,113 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.section-cards {
+  margin: 0 1rem;
+  max-width: 916px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  padding: 60px 50px;
+}
+.container img {
+  width: 60px;
+}
+.container-one {
+  background-color: var(--Bright-orange);
+}
+.container-two {
+  background-color: var(--Dark-cyan);
+}
+.container-three {
+  background-color: var(--Very-dark-cyan);
+}
+
+p {
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+h2 {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+a {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-top: 30px;
+  padding: 12px 25px;
+  /* max-width:150px; */
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 26px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.container-one a {
+  color: var(--Bright-orange);
+}
+.container-two a {
+  color: var(--Dark-cyan);
+}
+.container-three a {
+  color: var(--Very-dark-cyan);
+}
+
+.container-one a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: var(--Bright-orange);
+  background: transparent;
+
+  /* outline: 2px solid hsl(0, 0%, 95%); */
+}
+.container-two a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: var(--Dark-cyan);
+  background: transparent;
+
+  /* outline: 2px solid hsl(0, 0%, 95%); */
+}
+.container-three a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: var(--Very-dark-cyan);
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .section-cards {
+    margin: 1rem 1rem;
+    grid-template-columns: 1fr;
+  }
+}
